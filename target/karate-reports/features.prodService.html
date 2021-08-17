@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>features.prodService</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-08-17 04:24:17 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>Validate get All Attributes API</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.1:25]"><span>[2.1:25]</span> <span>Validate post for adding attributes to an option 1</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/prodService.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Check business logic for Product Service APIs</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getAttributes</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">Validate get All Attributes API</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2923</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:9]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://app.products.int.ap-southeast-2.dev.a-sharedinfra.net/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">16:24:14.621 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiJhcGk6Ly85NTYzNjIxMy1mOTkzLTRmYjgtYTBkZS00MzE5NTdkMjljMmUiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9jYmE4Y2EwMy04Yjk1LTQ0OGQtYjI1OS05OGE0NGQxMTJmN2MvIiwiaWF0IjoxNjI5MTgxMDAzLCJuYmYiOjE2MjkxODEwMDMsImV4cCI6MTYyOTE4NDkwMywiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhUQUFBQXVGMkt3M0dQVXlPcDlpdm9JRmZpd0VXcVFvaUNNdndtQ0lYRCt0Q2QzZ1pIY0lmMmxqS3BoR3JocDVaY0ZpdG1hVmVpRGkvZnpwZytoSmltSTJBaDVnPT0iLCJhbXIiOlsicHdkIiwid2lhIiwibWZhIl0sImFwcGlkIjoiOTU2MzYyMTMtZjk5My00ZmI4LWEwZGUtNDMxOTU3ZDI5YzJlIiwiYXBwaWRhY3IiOiIwIiwiZmFtaWx5X25hbWUiOiJTYWxkaSIsImdpdmVuX25hbWUiOiJBbWl0IiwiaXBhZGRyIjoiNTguOTYuNjYuNzkiLCJuYW1lIjoiQW1pdCBTYWxkaSIsIm9pZCI6IjczYzJhMjM1LTNkMjktNGU2ZS05Y2VlLTk2MDZmODcyY2MyYiIsIm9ucHJlbV9zaWQiOiJTLTEtNS0yMS03NzA4MzI5ODMtMjkyOTk1ODg1My0xODAyMDk3NjQ0LTM5NTM0NSIsInJoIjoiMC5BUW9BQThxb3k1V0xqVVN5V1ppa1RSRXZmQk5pWTVXVC1iaFBvTjVER1ZmU25DNEtBQ2MuIiwicm9sZXMiOlsicm9sZXMucHJvZHVjdHMud3JpdGUiXSwic2NwIjoicHJvZHVjdHMucmVhZCBwcm9kdWN0cy53cml0ZSIsInN1YiI6IlFOemg3MXU3aFpfcTJqZDZBYTdwdUxiQnpUUl9mWXpkYlpUZGVBQUtWN2MiLCJ0aWQiOiJjYmE4Y2EwMy04Yjk1LTQ0OGQtYjI1OS05OGE0NGQxMTJmN2MiLCJ1bmlxdWVfbmFtZSI6IkFtaXQuU2FsZGlAa21hcnQuY29tLmF1IiwidXBuIjoiQW1pdC5TYWxkaUBrbWFydC5jb20uYXUiLCJ1dGkiOiJYTDdsejhOdkNVR0x3N0dvbGI0VUFBIiwidmVyIjoiMS4wIn0.SKmlm1GfY8NyIWGNwNTOz_HUinGFqn9sAgjjgheHR_ypO_6q3M_MqeSGt-lpqMsTCCKxRvwvBv-hzcDlRAqeinCoz5UH45YynBHMYKk9kKHpgKt2vc_unL8O_UZZwnEy-U951m5NhvcNaAj5D9_8mehse7L03CXZKfXV-19EniMofOcnYpsTq_u17ok7Q2gfYNDIaghF3rsOBl0RI3LNlClT5oJ68zbUZmiO6K7rvcY0CSPVQ7dzxhJ_qyHCpBzbjK226bMr93_g9q4PKkENGnEZX4eiDopZeShUISU-GrET6I11OT9Had6FgX1IQd8nqXoaoi2YAPVAh5Rpn1fcJQ&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/attributes&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params { api-version: &#39;1.0&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">34</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2877</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">16:24:14.879 request:
+1 &gt; GET https://app.products.int.ap-southeast-2.dev.a-sharedinfra.net/api/v1/attributes?api-version=1.0
+1 &gt; Content-Type: application/json
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiJhcGk6Ly85NTYzNjIxMy1mOTkzLTRmYjgtYTBkZS00MzE5NTdkMjljMmUiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9jYmE4Y2EwMy04Yjk1LTQ0OGQtYjI1OS05OGE0NGQxMTJmN2MvIiwiaWF0IjoxNjI5MTgxMDAzLCJuYmYiOjE2MjkxODEwMDMsImV4cCI6MTYyOTE4NDkwMywiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhUQUFBQXVGMkt3M0dQVXlPcDlpdm9JRmZpd0VXcVFvaUNNdndtQ0lYRCt0Q2QzZ1pIY0lmMmxqS3BoR3JocDVaY0ZpdG1hVmVpRGkvZnpwZytoSmltSTJBaDVnPT0iLCJhbXIiOlsicHdkIiwid2lhIiwibWZhIl0sImFwcGlkIjoiOTU2MzYyMTMtZjk5My00ZmI4LWEwZGUtNDMxOTU3ZDI5YzJlIiwiYXBwaWRhY3IiOiIwIiwiZmFtaWx5X25hbWUiOiJTYWxkaSIsImdpdmVuX25hbWUiOiJBbWl0IiwiaXBhZGRyIjoiNTguOTYuNjYuNzkiLCJuYW1lIjoiQW1pdCBTYWxkaSIsIm9pZCI6IjczYzJhMjM1LTNkMjktNGU2ZS05Y2VlLTk2MDZmODcyY2MyYiIsIm9ucHJlbV9zaWQiOiJTLTEtNS0yMS03NzA4MzI5ODMtMjkyOTk1ODg1My0xODAyMDk3NjQ0LTM5NTM0NSIsInJoIjoiMC5BUW9BQThxb3k1V0xqVVN5V1ppa1RSRXZmQk5pWTVXVC1iaFBvTjVER1ZmU25DNEtBQ2MuIiwicm9sZXMiOlsicm9sZXMucHJvZHVjdHMud3JpdGUiXSwic2NwIjoicHJvZHVjdHMucmVhZCBwcm9kdWN0cy53cml0ZSIsInN1YiI6IlFOemg3MXU3aFpfcTJqZDZBYTdwdUxiQnpUUl9mWXpkYlpUZGVBQUtWN2MiLCJ0aWQiOiJjYmE4Y2EwMy04Yjk1LTQ0OGQtYjI1OS05OGE0NGQxMTJmN2MiLCJ1bmlxdWVfbmFtZSI6IkFtaXQuU2FsZGlAa21hcnQuY29tLmF1IiwidXBuIjoiQW1pdC5TYWxkaUBrbWFydC5jb20uYXUiLCJ1dGkiOiJYTDdsejhOdkNVR0x3N0dvbGI0VUFBIiwidmVyIjoiMS4wIn0.SKmlm1GfY8NyIWGNwNTOz_HUinGFqn9sAgjjgheHR_ypO_6q3M_MqeSGt-lpqMsTCCKxRvwvBv-hzcDlRAqeinCoz5UH45YynBHMYKk9kKHpgKt2vc_unL8O_UZZwnEy-U951m5NhvcNaAj5D9_8mehse7L03CXZKfXV-19EniMofOcnYpsTq_u17ok7Q2gfYNDIaghF3rsOBl0RI3LNlClT5oJ68zbUZmiO6K7rvcY0CSPVQ7dzxhJ_qyHCpBzbjK226bMr93_g9q4PKkENGnEZX4eiDopZeShUISU-GrET6I11OT9Had6FgX1IQd8nqXoaoi2YAPVAh5Rpn1fcJQ
+1 &gt; Host: app.products.int.ap-southeast-2.dev.a-sharedinfra.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:24:17.560 response time in milliseconds: 2678
+1 &lt; 200
+1 &lt; Date: Tue, 17 Aug 2021 06:24:17 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: Kestrel
+1 &lt; api-supported-versions: 1.0
+[{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;MATERIAL CONSTRUCTION&quot;,&quot;attributeValues&quot;:[&quot;COTTON&quot;,&quot;POLY COTTON&quot;,&quot;POLYESTER&quot;,&quot;RAYON&quot;,&quot;SATIN&quot;,&quot;LEATHER&quot;,&quot;SYNTHETIC&quot;,&quot;RUBBER&quot;,&quot;ACRYLIC&quot;,&quot;CHIFFON&quot;,&quot;COTTON ELASTANE&quot;,&quot;ELASTANE&quot;,&quot;NYLON&quot;,&quot;NYLON ELASTANE&quot;,&quot;VISCOSE&quot;,&quot;VISCOSE COTTON&quot;,&quot;WOOL&quot;,&quot;ACRYLIC NYLON&quot;,&quot;ACRYLIC WOOL&quot;,&quot;BENGALINE&quot;,&quot;COTTON ACRYLIC&quot;,&quot;COTTON LINEN&quot;,&quot;COTTON NYLON&quot;,&quot;CTN NYL ELAST&quot;,&quot;COTTON POLY&quot;,&quot;CTN POLY ELAST&quot;,&quot;CTN POL NYL ELS&quot;,&quot;CTN POLY VISC&quot;,&quot;COTTON SLUB&quot;,&quot;COTTON VISCOSE&quot;,&quot;CTN VISC ELAS&quot;,&quot;LINEN COTTON&quot;,&quot;LINEN VISCOSE&quot;,&quot;MODAL ELASTANE&quot;,&quot;NYLON VISCOSE&quot;,&quot;POLY CTN ELAS&quot;,&quot;POLY CTN RAYON&quot;,&quot;POLY CTN VISC&quot;,&quot;POLY ELASTANE&quot;,&quot;POLY LINEN&quot;,&quot;POLY NYL ELAST&quot;,&quot;POLY RAY LINEN&quot;,&quot;POLY VISCOSE&quot;,&quot;POLY VISC ELAST&quot;,&quot;POLYURETHANE&quot;,&quot;VISCOSE ELAST&quot;,&quot;VISCOSE LINEN&quot;,&quot;VISCOSE NYLON&quot;,&quot;VISC NYL ELAST&quot;,&quot;VISCOSE POLY&quot;,&quot;VISC POLY CTN&quot;,&quot;VISC POLY ELAS&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;SALE BY SAMPLE ITEM&quot;,&quot;attributeValues&quot;:[&quot;YES&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;KEY RACK ITEM&quot;,&quot;attributeValues&quot;:[&quot;YES&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;VOLUME SELLER&quot;,&quot;attributeValues&quot;:[&quot;YES&quot;,&quot;COMMODITY&quot;,&quot;FASHION&quot;,&quot;PROMOTIONAL&quot;,&quot;TABLE&quot;,&quot;VOLUME FASHION&quot;,&quot;KVL&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;TRIAL ITEM&quot;,&quot;attributeValues&quot;:[&quot;YES&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;FOOTWEAR FASTENING&quot;,&quot;attributeValues&quot;:[&quot;ADJUSTABLE&quot;,&quot;BUCKLE&quot;,&quot;LACE UP&quot;,&quot;SLIP ON&quot;,&quot;ZIP&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;FOOTWEAR FABRICATION&quot;,&quot;attributeValues&quot;:[&quot;LEATHER-SUEDE&quot;,&quot;LEATHER-COATED&quot;,&quot;LEATHER-F GRAIN&quot;,&quot;SYN-MICROFIBRE&quot;,&quot;SYN-MICROSUEDE&quot;,&quot;SYN-PATENT&quot;,&quot;SYNT-PU&quot;,&quot;SYNT-PVC&quot;,&quot;SYN-STRETCH PU&quot;,&quot;SYN-SUMMERLON&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;FOOTWEAR OUTSOLE FABRICN&quot;,&quot;attributeValues&quot;:[&quot;EVA&quot;,&quot;CREPE&quot;,&quot;LEATHER&quot;,&quot;PHYLON&quot;,&quot;PU&quot;,&quot;PVC&quot;,&quot;RUBBER&quot;,&quot;TPR&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;BOOK TYPE&quot;,&quot;attributeValues&quot;:[&quot;ADLT FICT HBACK&quot;,&quot;NF LG HRD COVER&quot;,&quot;NF LG SFT COVER&quot;,&quot;PAPERBACK A&quot;,&quot;PAPERBACK B&quot;,&quot;TRADE PAPERBACK&quot;,&quot;PB PAPER BACK&quot;,&quot;NEW RELEASE&quot;,&quot;B&quot;,&quot;A&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;DISNEY DIRECT TO RETAIL&quot;,&quot;attributeValues&quot;:[&quot;WINNIE THE POOH&quot;,&quot;EEYORE&quot;,&quot;TINKERBELL&quot;,&quot;TOY STORY&quot;,&quot;MICKEY MOUSE&quot;,&quot;NEMO&quot;,&quot;TIGGER&quot;,&quot;POOH &amp; CO&quot;,&quot;MINNIE MOUSE&quot;,&quot;MINNIE &amp; CO&quot;,&quot;MICKEY &amp; CO&quot;,&quot;BABY POOH&quot;,&quot;BABY EEYORE&quot;,&quot;BABY TIGGER&quot;,&quot;BABY POOH &amp; CO&quot;,&quot;PRINCESS&quot;,&quot;CARS&quot;,&quot;HANNAH MONTANA&quot;,&quot;HIGH SCHOOL MUS&quot;,&quot;PIRATES CARRIBN&quot;,&quot;FAIRIES&quot;,&quot;NARNIA&quot;,&quot;POWER RANGERS&quot;,&quot;WIZARDS OF WAVE&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;FISHING RANGE&quot;,&quot;attributeValues&quot;:[&quot;SALT WATER&quot;,&quot;FRESH WATER&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;SECURITY STOCK&quot;,&quot;attributeValues&quot;:[&quot;YES&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;DISCONTINUED&quot;,&quot;attributeValues&quot;:[&quot;APN UNKNOWN&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;REDEMPTION CARDS&quot;,&quot;attributeValues&quot;:[&quot;RECHARGE CARD&quot;,&quot;GIFT CARD&quot;,&quot;ITUNES CARD&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;TOY SALE DEFERRED LAYBY&quot;,&quot;attributeValues&quot;:[&quot;YES&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;BIG AND BULKY&quot;,&quot;attributeValues&quot;:[&quot;YES&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;RESTRICTED 18 PLUS&quot;,&quot;attributeValues&quot;:[&quot;YES&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;RESTRICTED 15 PLUS&quot;,&quot;attributeValues&quot;:[&quot;YES&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;KNIFE&quot;,&quot;attributeValues&quot;:[&quot;YES&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;BIKE ASSEMBLY&quot;,&quot;attributeValues&quot;:[&quot;YES&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;COLOUR/FABRIC TREND&quot;,&quot;attributeValues&quot;:[&quot;70&#39;S&quot;,&quot;ANIMAL&quot;,&quot;BLOCK STRIPE&quot;,&quot;BOHO LUXE&quot;,&quot;COLOUR BLOCK&quot;,&quot;COLOUR JEAN&quot;,&quot;CROCHET&quot;,&quot;FLORAL&quot;,&quot;FLOURO&quot;,&quot;LACE&quot;,&quot;MOD&quot;,&quot;MOTO ROCK&quot;,&quot;NAVAJO&quot;,&quot;SPICE&quot;,&quot;MILITARY&quot;,&quot;PONTI&quot;,&quot;SHIRRED&quot;,&quot;PRINT&quot;,&quot;SOLID&quot;,&quot;OTHER&quot;,&quot;GYPSY&quot;,&quot;STORY 1&quot;,&quot;STORY 2&quot;,&quot;ESSENTIALS&quot;,&quot;STORY 3&quot;,&quot;PICK &amp; MIX&quot;,&quot;MULTIPACK&quot;,&quot;CABLE&quot;,&quot;WAFFLE&quot;,&quot;MULTIYARN&quot;,&quot;SUPERSOFT&quot;,&quot;YOUTH PICK MIX&quot;,&quot;ENDS PROGRAM&quot;,&quot;CHAINS&quot;,&quot;ROMANCE&quot;,&quot;SILVER&quot;,&quot;GOLD&quot;,&quot;CLASS OF 94&quot;,&quot;FLOWERS&quot;,&quot;PERSPEX&quot;,&quot;FRIENDSHIP&quot;,&quot;KIDS&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;EVERYDAY&quot;,&quot;attributeValues&quot;:[&quot;365&quot;,&quot;TREND&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;VOLUME LINE LIST&quot;,&quot;attributeValues&quot;:[&quot;YES&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;TABLE&quot;,&quot;attributeValues&quot;:[&quot;KT01&quot;,&quot;KT02&quot;,&quot;KT03&quot;,&quot;KT04&quot;,&quot;KT05&quot;,&quot;KT06&quot;,&quot;KT07&quot;,&quot;KT08&quot;,&quot;KT09&quot;,&quot;KT10&quot;,&quot;KT11&quot;,&quot;KT12&quot;,&quot;KT13&quot;,&quot;KT14&quot;,&quot;KT15&quot;,&quot;KT16&quot;,&quot;KT17&quot;,&quot;KT18&quot;,&quot;KT19&quot;,&quot;KT20&quot;,&quot;WS01&quot;,&quot;WS02&quot;,&quot;WS03&quot;,&quot;WS04&quot;,&quot;WS05&quot;,&quot;WS06&quot;,&quot;WS07&quot;,&quot;WS08&quot;,&quot;WS09&quot;,&quot;WS10&quot;,&quot;WS11&quot;,&quot;WS12&quot;,&quot;WS13&quot;,&quot;WS14&quot;,&quot;WS15&quot;,&quot;WS16&quot;,&quot;WS17&quot;,&quot;WS18&quot;,&quot;WS19&quot;,&quot;WS20&quot;,&quot;WT01&quot;,&quot;WT02&quot;,&quot;WT03&quot;,&quot;WT04&quot;,&quot;WT05&quot;,&quot;WT06&quot;,&quot;WT07&quot;,&quot;WT08&quot;,&quot;WT09&quot;,&quot;WT10&quot;,&quot;WT11&quot;,&quot;WT12&quot;,&quot;WT13&quot;,&quot;WT14&quot;,&quot;WT15&quot;,&quot;WT16&quot;,&quot;WT17&quot;,&quot;WT18&quot;,&quot;WT19&quot;,&quot;WT20&quot;,&quot;WU01&quot;,&quot;WU02&quot;,&quot;WU03&quot;,&quot;WU04&quot;,&quot;WU05&quot;,&quot;WU06&quot;,&quot;WU07&quot;,&quot;WU08&quot;,&quot;WU09&quot;,&quot;WU10&quot;,&quot;WU11&quot;,&quot;WU12&quot;,&quot;WU13&quot;,&quot;WU14&quot;,&quot;WU15&quot;,&quot;WU16&quot;,&quot;WU17&quot;,&quot;WU18&quot;,&quot;WU19&quot;,&quot;WU20&quot;,&quot;MT01&quot;,&quot;MT02&quot;,&quot;MT03&quot;,&quot;MT04&quot;,&quot;MT05&quot;,&quot;MT06&quot;,&quot;MT08&quot;,&quot;MT09&quot;,&quot;MT10&quot;,&quot;MT11&quot;,&quot;MT12&quot;,&quot;MT13&quot;,&quot;MT14&quot;,&quot;MT15&quot;,&quot;MT16&quot;,&quot;MT17&quot;,&quot;MT18&quot;,&quot;MT19&quot;,&quot;MT29&quot;,&quot;DENIM WALL&quot;,&quot;MT07&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;INNOVATION BOOK&quot;,&quot;attributeValues&quot;:[&quot;YES&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;DC LAYBY&quot;,&quot;attributeValues&quot;:[&quot;YES&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;SOURCING CUSTOMERS&quot;,&quot;attributeValues&quot;:[&quot;COLES&quot;,&quot;OFFICEWORKS&quot;,&quot;ROBINSON&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;NOT TO BE SOLD&quot;,&quot;attributeValues&quot;:[&quot;POINT OF SALE&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;PACKING TYPE&quot;,&quot;attributeValues&quot;:[&quot;Poly Bag 16kg&quot;,&quot;Poly Bag 20kg&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;ALLOCATION PACK EXCEPTION&quot;,&quot;attributeValues&quot;:[&quot;INNER&quot;,&quot;CUSTOM&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;RFID&quot;,&quot;attributeValues&quot;:[&quot;YES&quot;]},{&quot;category&quot;:&quot;Operational&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;OVERSEAS DECANT&quot;,&quot;attributeValues&quot;:[&quot;YES&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;MATERIAL&quot;,&quot;attributeValues&quot;:[&quot;CANVAS&quot;,&quot;DRILL&quot;,&quot;POPLIN&quot;,&quot;DENIM&quot;,&quot;FLANNELETTE&quot;,&quot;KNIT&quot;,&quot;WOVEN&quot;,&quot;FABRIC&quot;,&quot;PU&quot;,&quot;WASHED PU&quot;,&quot;CERAMIC&quot;,&quot;LEATHER&quot;,&quot;METAL&quot;,&quot;PLASTIC&quot;,&quot;STRAW&quot;,&quot;SYNTHETIC&quot;,&quot;TEXTILE&quot;,&quot;ACRYLIC&quot;,&quot;ACRYLIC/POLY&quot;,&quot;COIR&quot;,&quot;COTTON&quot;,&quot;COTTON/POLY&quot;,&quot;FEATHER &amp; DOWN&quot;,&quot;FIBER CLAY&quot;,&quot;FOAM&quot;,&quot;GLASS&quot;,&quot;LATEX&quot;,&quot;MEMORY FOAM&quot;,&quot;MICROFIBRE&quot;,&quot;NON-WOVEN&quot;,&quot;POLYESTER&quot;,&quot;POLYESTER/CTTN&quot;,&quot;TERRACOTTA&quot;,&quot;WATERPROOF&quot;,&quot;WOOD&quot;,&quot;WOOL&quot;,&quot;WOOL/POLYESTER&quot;,&quot;KNIT/WOVEN&quot;,&quot;RUBBER&quot;,&quot;FEATHER&quot;,&quot;N/A&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;CUSTOMER TYPE&quot;,&quot;attributeValues&quot;:[&quot;TRADITIONAL&quot;,&quot;NEO TRADITIONAL&quot;,&quot;CONTEMPO&quot;,&quot;FASHION&quot;,&quot;CONTEMPORARY&quot;,&quot;JUNIOR&quot;,&quot;MAINSTREAM&quot;,&quot;CLASSIC&quot;,&quot;NATURAL&quot;,&quot;OPULENT&quot;,&quot;URBAN&quot;,&quot;YOUTH&quot;,&quot;DOG&quot;,&quot;CAT&quot;,&quot;GENERIC&quot;,&quot;N/A&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;SLEEVE LENGTH&quot;,&quot;attributeValues&quot;:[&quot;SHORT SLEEVE&quot;,&quot;SLEEVELESS&quot;,&quot;LONG SLEEVE&quot;,&quot;3 QTR SLEEVE&quot;,&quot;CROP PANT&quot;,&quot;LONG PANT&quot;,&quot;MAXI SKIRT&quot;,&quot;MIDI SKIRT&quot;,&quot;MINI SKIRT&quot;,&quot;REGULAR PANT&quot;,&quot;SHORT PANT&quot;,&quot;FULL LENGTH&quot;,&quot;LONG SHORT&quot;,&quot;MID SHORT&quot;,&quot;SHORT SKIRT&quot;,&quot;SHORTY SHORT&quot;,&quot;SHORT GYM&quot;,&quot;3/4 SLEEVE&quot;,&quot;ELBOW SLEEVE&quot;,&quot;N/A&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;NECK TYPE&quot;,&quot;attributeValues&quot;:[&quot;V NECK&quot;,&quot;CREW NECK&quot;,&quot;BOAT NECK&quot;,&quot;COLLAR&quot;,&quot;COWL NECK&quot;,&quot;SCOOP NECK&quot;,&quot;TURTLE NECK&quot;,&quot;SQUARE NECK&quot;,&quot;WEEKEND CASUAL&quot;,&quot;WORK WEAR&quot;,&quot;DRESSY CASUAL&quot;,&quot;SPEC OCCASION&quot;,&quot;HENLEY&quot;,&quot;ROLL NECK&quot;,&quot;N/A&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;PRODUCT TYPE&quot;,&quot;attributeValues&quot;:[&quot;TOP&quot;,&quot;BOTTOM&quot;,&quot;OTHER&quot;,&quot;DRESS&quot;,&quot;JACKET&quot;,&quot;KNITWEAR&quot;,&quot;SWIMWEAR&quot;,&quot;ALL IN ONE&quot;,&quot;ANKLET&quot;,&quot;BAG&quot;,&quot;BALLET&quot;,&quot;BANDEAU&quot;,&quot;BELT&quot;,&quot;BLOUSE&quot;,&quot;BOARDSHORT&quot;,&quot;BODY SUIT&quot;,&quot;BOOT&quot;,&quot;BOOTIES&quot;,&quot;BOXER&quot;,&quot;BRACES&quot;,&quot;BRIEF&quot;,&quot;CAMI&quot;,&quot;CARDIGAN&quot;,&quot;CLIP&quot;,&quot;COAT&quot;,&quot;COMPRESSION&quot;,&quot;COURT&quot;,&quot;COVER-UP&quot;,&quot;EARRING&quot;,&quot;GIFT SET&quot;,&quot;GLOVE&quot;,&quot;GOWN&quot;,&quot;GROWSUIT&quot;,&quot;HANDBAG&quot;,&quot;HANDKERCHIEF&quot;,&quot;HAT&quot;,&quot;HEADWEAR&quot;,&quot;HIKING SHOE&quot;,&quot;HOME SOCK&quot;,&quot;JEAN&quot;,&quot;JUMPER&quot;,&quot;LEGGING&quot;,&quot;LOAFER&quot;,&quot;MITTEN&quot;,&quot;NECKLACE&quot;,&quot;NIGHTIE&quot;,&quot;ONE PIECE&quot;,&quot;PANT&quot;,&quot;PLAYSUIT&quot;,&quot;POLO&quot;,&quot;PURSE&quot;,&quot;PYJAMA&quot;,&quot;PYJAMAS&quot;,&quot;RAINBOOT&quot;,&quot;RASH VEST&quot;,&quot;RING&quot;,&quot;ROMPER&quot;,&quot;RUNNING SHOE&quot;,&quot;SANDAL&quot;,&quot;SCARF&quot;,&quot;SCUFF&quot;,&quot;SEPARATE BOTTOM&quot;,&quot;SEPARATE TOP&quot;,&quot;SET&quot;,&quot;SHIRT&quot;,&quot;SHOE&quot;,&quot;SHORT&quot;,&quot;SINGLET&quot;,&quot;SKIRT&quot;,&quot;SKIVVY&quot;,&quot;SKORT&quot;,&quot;SLEEPSUIT&quot;,&quot;SLIPPER&quot;,&quot;SNEAKER&quot;,&quot;SOCK&quot;,&quot;SUNGLASS&quot;,&quot;SWEAT&quot;,&quot;SWIMSHORT&quot;,&quot;THERMAL&quot;,&quot;THONG&quot;,&quot;TIE&quot;,&quot;TIGHT&quot;,&quot;TOWEL&quot;,&quot;TRACKPANT&quot;,&quot;TRAINING SHOE&quot;,&quot;TRUNK&quot;,&quot;T-SHIRT&quot;,&quot;UMBRELLA&quot;,&quot;VEST&quot;,&quot;WALKING SHOE&quot;,&quot;WALLET&quot;,&quot;WATCH&quot;,&quot;WRISTWEAR&quot;,&quot;BELOW THE KNEE&quot;,&quot;BRA&quot;,&quot;CHEMISE&quot;,&quot;PANTYHOSE&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;SEASONALITY&quot;,&quot;attributeValues&quot;:[&quot;SUMMER&quot;,&quot;WINTER&quot;,&quot;NON-SEASONAL&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;HEEL TYPE&quot;,&quot;attributeValues&quot;:[&quot;FLAT&quot;,&quot;WEDGE&quot;,&quot;BLOCK&quot;,&quot;DRESS&quot;,&quot;HARD SOLE&quot;,&quot;KITTEN&quot;,&quot;SOFT SOLE&quot;,&quot;THIN&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;EVENT&quot;,&quot;attributeValues&quot;:[&quot;BACK TO SCHOOL&quot;,&quot;EASTER&quot;,&quot;CHRISTMAS&quot;,&quot;MOTHER&#39;S DAY&quot;,&quot;FATHER&#39;S DAY&quot;,&quot;SPRING FLOWER&quot;,&quot;WINTER SPORT&quot;,&quot;SUMMER SPORT&quot;,&quot;HALLOWEEN&quot;,&quot;VALENTINE&#39;S DAY&quot;,&quot;N/A&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;SHAPE (SILHOUETTE)&quot;,&quot;attributeValues&quot;:[&quot;BABYDOLL&quot;,&quot;BANDEAU&quot;,&quot;BODYCON&quot;,&quot;BOYLEG&quot;,&quot;CROP TOP&quot;,&quot;CROPPED&quot;,&quot;DRAPE CARDIGAN&quot;,&quot;FITTED&quot;,&quot;FULL BRIEF&quot;,&quot;KNIT/WOVEN&quot;,&quot;LONGLINE&quot;,&quot;MAXI&quot;,&quot;ONE PIECE&quot;,&quot;OVERCOAT&quot;,&quot;OVERSIZE&quot;,&quot;SEMI-BRIEF&quot;,&quot;SHIFT&quot;,&quot;SKATER&quot;,&quot;STRING BRIEF&quot;,&quot;TANKINI&quot;,&quot;TRIANGLE&quot;,&quot;TSHIRT DRESS&quot;,&quot;WAISTED&quot;,&quot;WOVEN TEE&quot;,&quot;A-LINE&quot;,&quot;BAND ONEPIECE&quot;,&quot;BAND SEPARATE&quot;,&quot;BANDEAU SET&quot;,&quot;BOOTLEG&quot;,&quot;BOYLEG SEPARATE&quot;,&quot;CARGO&quot;,&quot;CHEEKY B-SHORT&quot;,&quot;COVER-UP&quot;,&quot;DROP WAIST&quot;,&quot;FLARE&quot;,&quot;FULL BRIEF SEP&quot;,&quot;HI LO&quot;,&quot;LONG SHORT&quot;,&quot;MID SHORT&quot;,&quot;MIDI&quot;,&quot;MINI&quot;,&quot;PENCIL&quot;,&quot;PERF ONEPIECE&quot;,&quot;PLUS ONEPIECE&quot;,&quot;REGULAR B-SHORT&quot;,&quot;SEMI BRIEF SEP&quot;,&quot;SHIFT DRESS&quot;,&quot;SHIRT DRESS&quot;,&quot;SHORTY SHORT&quot;,&quot;SKINNY&quot;,&quot;SLOUCHY&quot;,&quot;STRAIGHT&quot;,&quot;STRAPLESS&quot;,&quot;STRING BRF SEP&quot;,&quot;STRUCTURED&quot;,&quot;SUPER SKINNY&quot;,&quot;TANKINI SEP&quot;,&quot;TANKINI SET&quot;,&quot;TRIANGLE OPIECE&quot;,&quot;TRIANGLE SEP&quot;,&quot;TRIANGLE SET&quot;,&quot;TUNIC&quot;,&quot;WIDE LEG&quot;,&quot;CROP&quot;,&quot;EARRING DROP&quot;,&quot;EARRING STUDS&quot;,&quot;EARRING MULTI 3&quot;,&quot;EARRING MULTI 6&quot;,&quot;EARRING MULTI 9&quot;,&quot;BRACELET&quot;,&quot;BANGLE&quot;,&quot;NECKLACE LONG&quot;,&quot;NECKLACE SHORT&quot;,&quot;RING&quot;,&quot;BROOCH&quot;,&quot;CAPS&quot;,&quot;WIDE BRIM&quot;,&quot;TRILBY&quot;,&quot;BUCKET&quot;,&quot;COWBOY&quot;,&quot;BERET&quot;,&quot;BEANIE&quot;,&quot;SCARVES KNIT&quot;,&quot;GLOVES FNGRLESS&quot;,&quot;GLOVES FULLFNGR&quot;,&quot;SNOOD&quot;,&quot;STOLE&quot;,&quot;CUT &amp; SEW HAT&quot;,&quot;OTHER&quot;,&quot;JEAN&quot;,&quot;MULTIPACKS&quot;,&quot;BACKPACK&quot;,&quot;TOTE&quot;,&quot;CROSSBODY&quot;,&quot;MESSENGER&quot;,&quot;HOBO&quot;,&quot;SHOULDER&quot;,&quot;STACHEL&quot;,&quot;WEEKENDER&quot;,&quot;ENVELOPE&quot;,&quot;CONSTRUCTED&quot;,&quot;WRISTLET&quot;,&quot;COIN&quot;,&quot;WAYFARER&quot;,&quot;AVIATOR&quot;,&quot;WRAP&quot;,&quot;SHIELD&quot;,&quot;OVERSIZED&quot;,&quot;CLASSIC&quot;,&quot;CATS EYE&quot;,&quot;GOLF&quot;,&quot;MANUAL FOLD&quot;,&quot;MINI FOLD&quot;,&quot;AUTOMATIC&quot;,&quot;STICK&quot;,&quot;STRAP&quot;,&quot;EXPANDER&quot;,&quot;DIGITAL&quot;,&quot;ANKLETS&quot;,&quot;SHOPPER&quot;,&quot;BOWLER&quot;,&quot;CLUTCH&quot;,&quot;ROUND&quot;,&quot;POLARISED&quot;,&quot;5 POCKET&quot;,&quot;ADJUSTABLE&quot;,&quot;ANKLET&quot;,&quot;ANORAK&quot;,&quot;ATTACHED ELAST&quot;,&quot;AUTO&quot;,&quot;BAKER BOY&quot;,&quot;BALCONETTE PU&quot;,&quot;BALCONETTE TS&quot;,&quot;BAZILIA&quot;,&quot;BIKER&quot;,&quot;BIKINI&quot;,&quot;BLAZER&quot;,&quot;BOOT&quot;,&quot;BOOT FIT&quot;,&quot;CAP&quot;,&quot;CATEYE&quot;,&quot;CHINO&quot;,&quot;CLOSED TOE&quot;,&quot;COLLAR&quot;,&quot;CONVERTIBLE&quot;,&quot;CREW&quot;,&quot;DROPS&quot;,&quot;ELASTIC WAIST&quot;,&quot;FEDORE&quot;,&quot;FINGERLESS&quot;,&quot;FLOPPY&quot;,&quot;FOOTLESS&quot;,&quot;FOOTLETS&quot;,&quot;FRIENDSHIP&quot;,&quot;FULL FIGURE&quot;,&quot;FULL FINGER&quot;,&quot;GILET&quot;,&quot;G-STRING&quot;,&quot;HALTER&quot;,&quot;HEADWRAP&quot;,&quot;HI-CUT&quot;,&quot;HISPTER&quot;,&quot;HOODED&quot;,&quot;JEAN BELT&quot;,&quot;KAFTAN&quot;,&quot;KIMONO&quot;,&quot;KNEE-HI&quot;,&quot;LACE-UP&quot;,&quot;LONG&quot;,&quot;LOW-CUT&quot;,&quot;MANUAL&quot;,&quot;MARY JANE&quot;,&quot;MOCCASIN&quot;,&quot;MOULDED CROP&quot;,&quot;NO SHOW&quot;,&quot;NON MOULD CROP&quot;,&quot;OPEN TOE&quot;,&quot;OPEN WAIST&quot;,&quot;POINTED TOE&quot;,&quot;PUFFER&quot;,&quot;PUSH UP&quot;,&quot;QUARTER CREW&quot;,&quot;RACERBACK&quot;,&quot;REGULAR FIT&quot;,&quot;RELAXED FIT&quot;,&quot;ROUND TOE&quot;,&quot;SARONG&quot;,&quot;SATCHEL&quot;,&quot;SCUFF&quot;,&quot;SHIRT NIGHT&quot;,&quot;SHORT&quot;,&quot;SHORTIE BRIEF&quot;,&quot;SKINNY BELT&quot;,&quot;SKINNY FIT&quot;,&quot;SKINNY LEG&quot;,&quot;SLIM FIT&quot;,&quot;SLIP-ON&quot;,&quot;SLIPPER&quot;,&quot;SLOUCH FIT&quot;,&quot;SOCK&quot;,&quot;SOFT CUP&quot;,&quot;STAY UPS&quot;,&quot;STRAIGHT FIT&quot;,&quot;STRAIGHT LEG&quot;,&quot;STRETCH&quot;,&quot;STUD&quot;,&quot;SUNGLASSES&quot;,&quot;SUPPORT &amp; SHAPE&quot;,&quot;T-BAR&quot;,&quot;TECH&quot;,&quot;THONG&quot;,&quot;T-SHIRT BRA&quot;,&quot;TUNNEL&quot;,&quot;TURN TOP&quot;,&quot;UNDERWIRE&quot;,&quot;UTILITY&quot;,&quot;VISOR&quot;,&quot;WAISTED BELT&quot;,&quot;WIDE ELASTIC&quot;,&quot;WIDE FIT&quot;,&quot;ZIP THRU&quot;,&quot;BRAZILIA&quot;,&quot;CLOG&quot;,&quot;FISHERMAN&quot;,&quot;FOOTBED&quot;,&quot;GLADIATOR&quot;,&quot;PULL-OVER&quot;,&quot;ROMAN&quot;,&quot;CAT EYE&quot;,&quot;DROP&quot;,&quot;FEDORA&quot;,&quot;CAMI&quot;,&quot;TANK&quot;,&quot;N/A&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;PATTERN TYPE&quot;,&quot;attributeValues&quot;:[&quot;PLAIN&quot;,&quot;PRINT&quot;,&quot;STRIPE&quot;,&quot;SPOT&quot;,&quot;CHECK&quot;,&quot;EMBELLISHMENT&quot;,&quot;SLOGAN&quot;,&quot;TEXTURED&quot;,&quot;N/A&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;ROOM&quot;,&quot;attributeValues&quot;:[&quot;KITCHEN &amp;DINING&quot;,&quot;BED BATH &amp;LNDRY&quot;,&quot;MISC&quot;,&quot;SHED&quot;,&quot;DECOR &amp;SEASONAL&quot;,&quot;FAMILY ENT&quot;,&quot;HOME OFFICE&quot;,&quot;SPORTS&quot;,&quot;TOYS &amp; LEARNING&quot;,&quot;KIDS U/W &amp; S/W&quot;,&quot;PARTY&quot;,&quot;CHRISTMAS&quot;,&quot;BEAUTIFICATION&quot;,&quot;CHECKOUTS&quot;,&quot;CHILDRENSWEAR&quot;,&quot;EASTER&quot;,&quot;FASHION ACC&quot;,&quot;INTIMATES&quot;,&quot;KIDS FOOTWEAR&quot;,&quot;MENS FOOTWEAR&quot;,&quot;MENS OUTERWEAR&quot;,&quot;MENS U/W &amp; ACC&quot;,&quot;NURSERY&quot;,&quot;WOMENS FOOTWEAR&quot;,&quot;WOMENS OUT/WEAR&quot;,&quot;KIDS ROOM&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;GENDER&quot;,&quot;attributeValues&quot;:[&quot;WOMENS&quot;,&quot;MENS&quot;,&quot;GIRLS&quot;,&quot;BOYS&quot;,&quot;BABY&quot;,&quot;UNISEX&quot;,&quot;N/A&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;AGE GROUP&quot;,&quot;attributeValues&quot;:[&quot;INFANT&quot;,&quot;JUNIOR&quot;,&quot;SENIOR&quot;,&quot;1-7&quot;,&quot;7-16&quot;,&quot;ADULT&quot;,&quot;N/A&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;SELLING PACK&quot;,&quot;attributeValues&quot;:[&quot;SINGLE&quot;,&quot;MULTIPACK&quot;,&quot;MULTI-PACK&quot;,&quot;FLAT PACK&quot;,&quot;READY-MADE&quot;,&quot;N/A&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;END USE (LIFESTYLE)&quot;,&quot;attributeValues&quot;:[&quot;INDUSTRIAL&quot;,&quot;WORK WEAR&quot;,&quot;DRESS WEAR&quot;,&quot;CASUAL WEAR&quot;,&quot;BEACH WEAR&quot;,&quot;SPORT&quot;,&quot;FITNESS&quot;,&quot;MATERNITY&quot;,&quot;NOT APPLICABLE&quot;,&quot;NOVELTY&quot;,&quot;OUTDOOR&quot;,&quot;PARTY WEAR&quot;,&quot;SCHOOL&quot;,&quot;SPORTS LEISURE&quot;,&quot;TEAM SPORT&quot;,&quot;ESSENTIALS&quot;,&quot;FASHION&quot;,&quot;N/A&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;LENGTH TYPE&quot;,&quot;attributeValues&quot;:[&quot;LONG&quot;,&quot;MID&quot;,&quot;THIGH&quot;,&quot;REGULAR&quot;,&quot;KNEE LENGTH&quot;,&quot;SHORT&quot;,&quot;LOW&quot;,&quot;HIGH&quot;,&quot;3/4&quot;,&quot;7/8&quot;,&quot;MAXI&quot;,&quot;MIDI&quot;,&quot;MINI&quot;,&quot;NOT APPLICABLE&quot;,&quot;SINGLE&quot;,&quot;FULL LENGTH&quot;,&quot;N/A&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;COLLECTION&quot;,&quot;attributeValues&quot;:[&quot;CLASSIC&quot;,&quot;ESSENTIALS&quot;,&quot;FRUIT&quot;,&quot;GOLD&quot;,&quot;HIPPY&quot;,&quot;HOT MOD&quot;,&quot;NATURAL&quot;,&quot;PASTEL&quot;,&quot;SILVER&quot;,&quot;ALICE&quot;,&quot;ANGELINA&quot;,&quot;ANIMAL&quot;,&quot;ANNA&quot;,&quot;ARABESQUE&quot;,&quot;ARBOUR&quot;,&quot;ASCOT&quot;,&quot;ASTERA&quot;,&quot;AVA&quot;,&quot;AYN&quot;,&quot;AZTEC&quot;,&quot;BE HAPPY&quot;,&quot;BECKES&quot;,&quot;BIKE&quot;,&quot;BILLIE&quot;,&quot;BLOCK&quot;,&quot;BOLD BLOCK&quot;,&quot;BOTANICAL&quot;,&quot;BRAMBLE&quot;,&quot;BRANCHES&quot;,&quot;BROOKLYN&quot;,&quot;BRYSON&quot;,&quot;CARINA&quot;,&quot;CASBAH&quot;,&quot;CASSIAN&quot;,&quot;CHAMBRAY&quot;,&quot;CHARLOTTE&quot;,&quot;CHECK&quot;,&quot;CHEETAH&quot;,&quot;CHEVRON&quot;,&quot;CHLOE&quot;,&quot;CIRCLES&quot;,&quot;CLEO&quot;,&quot;COASTAL STRIPE&quot;,&quot;COCKATIEL&quot;,&quot;COOPER&quot;,&quot;CRISTINA&quot;,&quot;DAMASK&quot;,&quot;DANIELLE&quot;,&quot;DAVIS&quot;,&quot;DECO&quot;,&quot;DECOUPAGE&quot;,&quot;DEXTER&quot;,&quot;DOMINO&quot;,&quot;DOWNTOWN&quot;,&quot;DREAM BIG&quot;,&quot;EIFFEL&quot;,&quot;ELIZA&quot;,&quot;ELLIOT GRY&quot;,&quot;EMILY&quot;,&quot;EMMA&quot;,&quot;EVIE&quot;,&quot;FAHRI&quot;,&quot;FLAMINGO&quot;,&quot;FLORIDA&quot;,&quot;FLUER&quot;,&quot;FOIL SPOT&quot;,&quot;GADGETS PROGRAM&quot;,&quot;GATSBY&quot;,&quot;GEO&quot;,&quot;GRACE&quot;,&quot;HANNAH&quot;,&quot;HELENA&quot;,&quot;HOME&quot;,&quot;HOME PIXEL&quot;,&quot;HONEYCOMB&quot;,&quot;INCA&quot;,&quot;INCA PIXEL&quot;,&quot;INDIGO&quot;,&quot;INKA&quot;,&quot;ISABELLE&quot;,&quot;ISHA&quot;,&quot;ISLA&quot;,&quot;JASMINE&quot;,&quot;JEMIMA&quot;,&quot;JEWEL&quot;,&quot;KASURI&quot;,&quot;KATE&quot;,&quot;KENZI&quot;,&quot;KOA&quot;,&quot;KOBI&quot;,&quot;KRISTY&quot;,&quot;LATTICE&quot;,&quot;LATTICE SPOT&quot;,&quot;LAUREN&quot;,&quot;LEO&quot;,&quot;LEOPARD&quot;,&quot;LEXI&quot;,&quot;LILY&quot;,&quot;LLL&quot;,&quot;LONSDALE&quot;,&quot;LOOP&quot;,&quot;LOUISA&quot;,&quot;LOVE&quot;,&quot;LUKA&quot;,&quot;MADDISON&quot;,&quot;MADEL&quot;,&quot;MADELINE&quot;,&quot;MANHATTAN&quot;,&quot;MARRAKESH&quot;,&quot;MASON&quot;,&quot;MATILDA&quot;,&quot;METALLIC LOVE&quot;,&quot;MIX N MATCH&quot;,&quot;MONTROSE&quot;,&quot;MOROCAN TILE&quot;,&quot;NAKIA&quot;,&quot;NARA&quot;,&quot;NATURE&quot;,&quot;NICHOLAS&quot;,&quot;NOAH&quot;,&quot;OLIVIA&quot;,&quot;OMBRE&quot;,&quot;ORALIE&quot;,&quot;ORIENT&quot;,&quot;OSBORN&quot;,&quot;OSCAR&quot;,&quot;PARKER&quot;,&quot;PARROT&quot;,&quot;PHILIPPIA&quot;,&quot;PIXEL BRIGHT&quot;,&quot;PLAID&quot;,&quot;POSTCARDS&quot;,&quot;PRIYA&quot;,&quot;RESERVED&quot;,&quot;REV&quot;,&quot;RIKU&quot;,&quot;ROCHELLE&quot;,&quot;ROSALIE&quot;,&quot;SHAMBRA&quot;,&quot;SOPHIE&quot;,&quot;SPENCER&quot;,&quot;SPRIGS&quot;,&quot;SQUIGGLE&quot;,&quot;STELLA&quot;,&quot;STRIPE&quot;,&quot;TAYLOR&quot;,&quot;TEAH&quot;,&quot;TESSA&quot;,&quot;THAMES&quot;,&quot;THOMPSON&quot;,&quot;TIGER&quot;,&quot;TOBY&quot;,&quot;TRELLIS&quot;,&quot;TRENT&quot;,&quot;TRIANGLE&quot;,&quot;TRIANGLES&quot;,&quot;TURKISH&quot;,&quot;TURKISH TILE&quot;,&quot;VICTORIA&quot;,&quot;VINES&quot;,&quot;VIOLET&quot;,&quot;WAVE&quot;,&quot;ZEBRA&quot;,&quot;ZOE&quot;,&quot;AGENTS&quot;,&quot;BIONICLE&quot;,&quot;BRICKS AND MORE&quot;,&quot;CITY&quot;,&quot;CLAYDOUGH&quot;,&quot;COLOUR POP&quot;,&quot;CREATOR&quot;,&quot;DISNEY PRINCESS&quot;,&quot;DUPLO&quot;,&quot;ELITE&quot;,&quot;ELVES&quot;,&quot;HANSEL &amp; GRETEL&quot;,&quot;LEGNDS OF CHIMA&quot;,&quot;LEGO FRIENDS&quot;,&quot;MEGA&quot;,&quot;MINECRAFT&quot;,&quot;MINI FIGURES&quot;,&quot;MIXELS&quot;,&quot;NINJAGO&quot;,&quot;REBELLE&quot;,&quot;SCOOBY DOO&quot;,&quot;STAR WARS&quot;,&quot;SUPER HEROES&quot;,&quot;SUPER SOAKER&quot;,&quot;TECHNIC&quot;,&quot;THE MOVIE&quot;,&quot;VORTEX&quot;,&quot;ZOMBIE&quot;,&quot;SPEED CHAMPIONS&quot;,&quot;PIRATES&quot;,&quot;JUNIORS&quot;,&quot;ASTLEY&quot;,&quot;INCA BLUE&quot;,&quot;LEGO CLASSIC&quot;,&quot;SPEED RACERS&quot;,&quot;RED &amp; WHITE&quot;,&quot;SHIMMER&quot;,&quot;TEAL/BERRY&quot;,&quot;N/A&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;WORLD&quot;,&quot;attributeValues&quot;:[&quot;HIS/HER WORLD&quot;,&quot;HOME WORLD&quot;,&quot;KID&#39;S WORLD&quot;,&quot;OTHER&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;SIZE CATEGORY&quot;,&quot;attributeValues&quot;:[&quot;REGULAR&quot;,&quot;PLUS&quot;,&quot;N/A&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;365 PRODUCT&quot;,&quot;attributeValues&quot;:[&quot;YES&quot;,&quot;NO&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;WAIST TYPE&quot;,&quot;attributeValues&quot;:[&quot;MID RISE&quot;,&quot;HIGH RISE&quot;,&quot;N/A&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;FABRIC TYPE&quot;,&quot;attributeValues&quot;:[&quot;BRODERIE&quot;,&quot;CASHMER&quot;,&quot;CORAL FLEECE&quot;,&quot;COTTON KNIT&quot;,&quot;COTTON WOVEN&quot;,&quot;COTTON BLEN&quot;,&quot;COTTON ELASTANE&quot;,&quot;CTTN/POLY/ELAST&quot;,&quot;FLANNELETTE WVN&quot;,&quot;FLANNELETTE KNT&quot;,&quot;FLEECE&quot;,&quot;CHENILLE&quot;,&quot;CREPE KNIT&quot;,&quot;CREPE WOVEN&quot;,&quot;DENIM KNIT&quot;,&quot;LACE KNIT&quot;,&quot;LACE WOVEN&quot;,&quot;LYOCELL&quot;,&quot;MESH&quot;,&quot;MICROFIBRE&quot;,&quot;POLAR FLEECE&quot;,&quot;PONTI&quot;,&quot;POINTELLE&quot;,&quot;POYLESTER KNIT&quot;,&quot;POLYESTER WOVEN&quot;,&quot;RIB&quot;,&quot;SATIN&quot;,&quot;SEAMFREE&quot;,&quot;SWEATER KNIT&quot;,&quot;SLUB&quot;,&quot;WAFFLE&quot;,&quot;VELOUR&quot;,&quot;VISC BLEND KNIT&quot;,&quot;VISCOSE WOVEN&quot;,&quot;N/A&quot;,&quot;INCOMPLETE&quot;]},{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;KEY TREND&quot;,&quot;attributeValues&quot;:[&quot;ASSYMETRIC&quot;,&quot;COLD SHOULDER&quot;,&quot;KNT FRONT&quot;,&quot;MESH&quot;,&quot;NO CUP&quot;,&quot;OFF SHOULDER&quot;,&quot;ONE SHOULDER&quot;,&quot;PAPERBAG&quot;,&quot;PLEATS&quot;,&quot;SHIRRING&quot;,&quot;SLEEVE DETAIL&quot;,&quot;SOFT CUP&quot;,&quot;TAPERED&quot;,&quot;TIERED HEM&quot;,&quot;TIES&quot;,&quot;TRIM DETAIL&quot;,&quot;WRAP&quot;,&quot;N/A&quot;,&quot;INCOMPLETE&quot;]}]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match header content-type == &#39;application/json; charset=utf-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">addOptionAttributes</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:25]</span>
+                <span class="scenario-name">Validate post for adding attributes to an option 1</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3057</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.1:25]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.1:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://app.products.int.ap-southeast-2.dev.a-sharedinfra.net/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">16:24:14.621 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiJhcGk6Ly85NTYzNjIxMy1mOTkzLTRmYjgtYTBkZS00MzE5NTdkMjljMmUiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9jYmE4Y2EwMy04Yjk1LTQ0OGQtYjI1OS05OGE0NGQxMTJmN2MvIiwiaWF0IjoxNjI5MTgxMDAzLCJuYmYiOjE2MjkxODEwMDMsImV4cCI6MTYyOTE4NDkwMywiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhUQUFBQXVGMkt3M0dQVXlPcDlpdm9JRmZpd0VXcVFvaUNNdndtQ0lYRCt0Q2QzZ1pIY0lmMmxqS3BoR3JocDVaY0ZpdG1hVmVpRGkvZnpwZytoSmltSTJBaDVnPT0iLCJhbXIiOlsicHdkIiwid2lhIiwibWZhIl0sImFwcGlkIjoiOTU2MzYyMTMtZjk5My00ZmI4LWEwZGUtNDMxOTU3ZDI5YzJlIiwiYXBwaWRhY3IiOiIwIiwiZmFtaWx5X25hbWUiOiJTYWxkaSIsImdpdmVuX25hbWUiOiJBbWl0IiwiaXBhZGRyIjoiNTguOTYuNjYuNzkiLCJuYW1lIjoiQW1pdCBTYWxkaSIsIm9pZCI6IjczYzJhMjM1LTNkMjktNGU2ZS05Y2VlLTk2MDZmODcyY2MyYiIsIm9ucHJlbV9zaWQiOiJTLTEtNS0yMS03NzA4MzI5ODMtMjkyOTk1ODg1My0xODAyMDk3NjQ0LTM5NTM0NSIsInJoIjoiMC5BUW9BQThxb3k1V0xqVVN5V1ppa1RSRXZmQk5pWTVXVC1iaFBvTjVER1ZmU25DNEtBQ2MuIiwicm9sZXMiOlsicm9sZXMucHJvZHVjdHMud3JpdGUiXSwic2NwIjoicHJvZHVjdHMucmVhZCBwcm9kdWN0cy53cml0ZSIsInN1YiI6IlFOemg3MXU3aFpfcTJqZDZBYTdwdUxiQnpUUl9mWXpkYlpUZGVBQUtWN2MiLCJ0aWQiOiJjYmE4Y2EwMy04Yjk1LTQ0OGQtYjI1OS05OGE0NGQxMTJmN2MiLCJ1bmlxdWVfbmFtZSI6IkFtaXQuU2FsZGlAa21hcnQuY29tLmF1IiwidXBuIjoiQW1pdC5TYWxkaUBrbWFydC5jb20uYXUiLCJ1dGkiOiJYTDdsejhOdkNVR0x3N0dvbGI0VUFBIiwidmVyIjoiMS4wIn0.SKmlm1GfY8NyIWGNwNTOz_HUinGFqn9sAgjjgheHR_ypO_6q3M_MqeSGt-lpqMsTCCKxRvwvBv-hzcDlRAqeinCoz5UH45YynBHMYKk9kKHpgKt2vc_unL8O_UZZwnEy-U951m5NhvcNaAj5D9_8mehse7L03CXZKfXV-19EniMofOcnYpsTq_u17ok7Q2gfYNDIaghF3rsOBl0RI3LNlClT5oJ68zbUZmiO6K7rvcY0CSPVQ7dzxhJ_qyHCpBzbjK226bMr93_g9q4PKkENGnEZX4eiDopZeShUISU-GrET6I11OT9Had6FgX1IQd8nqXoaoi2YAPVAh5Rpn1fcJQ&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/options/929fb981-2066-41ac-b2bf-5cd81dd003f0/attributes&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header accept = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request [{&quot;category&quot;: &quot;Planning&quot;,&quot;subCategory&quot;: &quot;Flexible&quot;,&quot;attributeName&quot;: &quot;KEY TREND&quot;,&quot;attributeValue&quot;: &quot;ASSYMETRIC&quot;}]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">33</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3020</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.21">16:24:14.879 request:
+1 &gt; POST https://app.products.int.ap-southeast-2.dev.a-sharedinfra.net/api/v1/options/929fb981-2066-41ac-b2bf-5cd81dd003f0/attributes
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiJhcGk6Ly85NTYzNjIxMy1mOTkzLTRmYjgtYTBkZS00MzE5NTdkMjljMmUiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9jYmE4Y2EwMy04Yjk1LTQ0OGQtYjI1OS05OGE0NGQxMTJmN2MvIiwiaWF0IjoxNjI5MTgxMDAzLCJuYmYiOjE2MjkxODEwMDMsImV4cCI6MTYyOTE4NDkwMywiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhUQUFBQXVGMkt3M0dQVXlPcDlpdm9JRmZpd0VXcVFvaUNNdndtQ0lYRCt0Q2QzZ1pIY0lmMmxqS3BoR3JocDVaY0ZpdG1hVmVpRGkvZnpwZytoSmltSTJBaDVnPT0iLCJhbXIiOlsicHdkIiwid2lhIiwibWZhIl0sImFwcGlkIjoiOTU2MzYyMTMtZjk5My00ZmI4LWEwZGUtNDMxOTU3ZDI5YzJlIiwiYXBwaWRhY3IiOiIwIiwiZmFtaWx5X25hbWUiOiJTYWxkaSIsImdpdmVuX25hbWUiOiJBbWl0IiwiaXBhZGRyIjoiNTguOTYuNjYuNzkiLCJuYW1lIjoiQW1pdCBTYWxkaSIsIm9pZCI6IjczYzJhMjM1LTNkMjktNGU2ZS05Y2VlLTk2MDZmODcyY2MyYiIsIm9ucHJlbV9zaWQiOiJTLTEtNS0yMS03NzA4MzI5ODMtMjkyOTk1ODg1My0xODAyMDk3NjQ0LTM5NTM0NSIsInJoIjoiMC5BUW9BQThxb3k1V0xqVVN5V1ppa1RSRXZmQk5pWTVXVC1iaFBvTjVER1ZmU25DNEtBQ2MuIiwicm9sZXMiOlsicm9sZXMucHJvZHVjdHMud3JpdGUiXSwic2NwIjoicHJvZHVjdHMucmVhZCBwcm9kdWN0cy53cml0ZSIsInN1YiI6IlFOemg3MXU3aFpfcTJqZDZBYTdwdUxiQnpUUl9mWXpkYlpUZGVBQUtWN2MiLCJ0aWQiOiJjYmE4Y2EwMy04Yjk1LTQ0OGQtYjI1OS05OGE0NGQxMTJmN2MiLCJ1bmlxdWVfbmFtZSI6IkFtaXQuU2FsZGlAa21hcnQuY29tLmF1IiwidXBuIjoiQW1pdC5TYWxkaUBrbWFydC5jb20uYXUiLCJ1dGkiOiJYTDdsejhOdkNVR0x3N0dvbGI0VUFBIiwidmVyIjoiMS4wIn0.SKmlm1GfY8NyIWGNwNTOz_HUinGFqn9sAgjjgheHR_ypO_6q3M_MqeSGt-lpqMsTCCKxRvwvBv-hzcDlRAqeinCoz5UH45YynBHMYKk9kKHpgKt2vc_unL8O_UZZwnEy-U951m5NhvcNaAj5D9_8mehse7L03CXZKfXV-19EniMofOcnYpsTq_u17ok7Q2gfYNDIaghF3rsOBl0RI3LNlClT5oJ68zbUZmiO6K7rvcY0CSPVQ7dzxhJ_qyHCpBzbjK226bMr93_g9q4PKkENGnEZX4eiDopZeShUISU-GrET6I11OT9Had6FgX1IQd8nqXoaoi2YAPVAh5Rpn1fcJQ
+1 &gt; accept: text/plain
+1 &gt; Content-Length: 108
+1 &gt; Host: app.products.int.ap-southeast-2.dev.a-sharedinfra.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+[{&quot;category&quot;:&quot;Planning&quot;,&quot;subCategory&quot;:&quot;Flexible&quot;,&quot;attributeName&quot;:&quot;KEY TREND&quot;,&quot;attributeValue&quot;:&quot;ASSYMETRIC&quot;}]
+
+16:24:17.706 response time in milliseconds: 2827
+1 &lt; 204
+1 &lt; Date: Tue, 17 Aug 2021 06:24:17 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Server: Kestrel
+1 &lt; api-supported-versions: 1.0, 2.0
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
